@@ -6,10 +6,14 @@ import Home from './components/Home';
 import CreateNote from './components/CreateNote';
 import Note from './components/Note';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Button from './add/button/button';
 
 function App() {
   return(
+    <div className="App">
+      <header className="App-header">
+        <Button label="click me!!!"/>
+      </header>
     <Router>
     <Navbar/>
     
@@ -23,6 +27,7 @@ function App() {
         <CreateNote/>
       </Route>
     </Router>
+    </div>
 
   )
 }
